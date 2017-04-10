@@ -1,0 +1,229 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{71F9EE1B-E376-4694-BFA6-0C9E07B7C1AB}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AllTools</RootNamespace>
+    <AssemblyName>AllTools</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Pen.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FDebug\frmCom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FDebug\frmCom.Designer.cs">
+      <DependentUpon>frmCom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FDebug\frmUdp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FDebug\frmUdp.Designer.cs">
+      <DependentUpon>frmUdp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FDebug\ucCommunite.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FDebug\ucCommunite.Designer.cs">
+      <DependentUpon>ucCommunite.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FMcgs\frmConnection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FMcgs\frmConnection.Designer.cs">
+      <DependentUpon>frmConnection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FProgram\frmIcon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FProgram\frmIcon.Designer.cs">
+      <DependentUpon>frmIcon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FProgram\frmIconCheck.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FProgram\frmIconCheck.Designer.cs">
+      <DependentUpon>frmIconCheck.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmStart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmStart.Designer.cs">
+      <DependentUpon>frmStart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ucAnGui.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucAnGui.Designer.cs">
+      <DependentUpon>ucAnGui.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucDebug.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucDebug.Designer.cs">
+      <DependentUpon>ucDebug.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucEelect.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucEelect.Designer.cs">
+      <DependentUpon>ucEelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucMcgs.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucMcgs.Designer.cs">
+      <DependentUpon>ucMcgs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucPlc.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucPlc.Designer.cs">
+      <DependentUpon>ucPlc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucProgram.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucProgram.Designer.cs">
+      <DependentUpon>ucProgram.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucValue.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucValue.Designer.cs">
+      <DependentUpon>ucValue.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="FDebug\frmCom.resx">
+      <DependentUpon>frmCom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FDebug\frmUdp.resx">
+      <DependentUpon>frmUdp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FDebug\ucCommunite.resx">
+      <DependentUpon>ucCommunite.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FMcgs\frmConnection.resx">
+      <DependentUpon>frmConnection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FProgram\frmIcon.resx">
+      <DependentUpon>frmIcon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FProgram\frmIconCheck.resx">
+      <DependentUpon>frmIconCheck.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmStart.resx">
+      <DependentUpon>frmStart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="ucAnGui.resx">
+      <DependentUpon>ucAnGui.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucDebug.resx">
+      <DependentUpon>ucDebug.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucEelect.resx">
+      <DependentUpon>ucEelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucMcgs.resx">
+      <DependentUpon>ucMcgs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucPlc.resx">
+      <DependentUpon>ucPlc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucProgram.resx">
+      <DependentUpon>ucProgram.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucValue.resx">
+      <DependentUpon>ucValue.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\HKLabs\All\All.csproj">
+      <Project>{003984f4-a872-41f4-a3e2-9950c99815f2}</Project>
+      <Name>All</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\power 1175844.png" />
+    <None Include="Open.png" />
+    <Content Include="Pen.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

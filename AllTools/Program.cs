@@ -13,10 +13,6 @@ namespace AllTools
         [STAThread]
         static void Main()
         {
-            All.Communicate.AutoReadAndWrite auto = new All.Communicate.AutoReadAndWrite();
-            auto.Load("Meter.xml");
-
-
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new frmMain());

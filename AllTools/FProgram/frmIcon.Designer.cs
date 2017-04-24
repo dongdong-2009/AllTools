@@ -33,8 +33,8 @@
             this.fileSavePath = new System.Windows.Forms.FolderBrowserDialog();
             this.pbValue = new All.Control.Metro.ProgressBar();
             this.panel1 = new All.Control.Metro.Panel(this.components);
-            this.rbtPng = new System.Windows.Forms.RadioButton();
-            this.rbtIcon = new System.Windows.Forms.RadioButton();
+            this.rbtPng = new All.Control.Metro.RadioButton();
+            this.rbtIcon = new All.Control.Metro.RadioButton();
             this.btnPath = new System.Windows.Forms.Button();
             this.txtFile = new System.Windows.Forms.TextBox();
             this.label2 = new All.Control.Metro.Label();
@@ -74,6 +74,7 @@
             this.panel1.Controls.Add(this.txtNet);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Font = new System.Drawing.Font("宋体", 9F);
             this.panel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
             this.panel1.Location = new System.Drawing.Point(2, 29);
             this.panel1.Name = "panel1";
@@ -84,25 +85,29 @@
             // 
             this.rbtPng.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.rbtPng.AutoSize = true;
+            this.rbtPng.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
             this.rbtPng.Checked = true;
+            this.rbtPng.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
             this.rbtPng.Location = new System.Drawing.Point(654, 37);
             this.rbtPng.Name = "rbtPng";
             this.rbtPng.Size = new System.Drawing.Size(65, 16);
             this.rbtPng.TabIndex = 7;
             this.rbtPng.TabStop = true;
             this.rbtPng.Text = "PNG格式";
-            this.rbtPng.UseVisualStyleBackColor = true;
+            this.rbtPng.UseVisualStyleBackColor = false;
             // 
             // rbtIcon
             // 
             this.rbtIcon.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.rbtIcon.AutoSize = true;
+            this.rbtIcon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.rbtIcon.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
             this.rbtIcon.Location = new System.Drawing.Point(654, 11);
             this.rbtIcon.Name = "rbtIcon";
             this.rbtIcon.Size = new System.Drawing.Size(71, 16);
             this.rbtIcon.TabIndex = 6;
             this.rbtIcon.Text = "ICON格式";
-            this.rbtIcon.UseVisualStyleBackColor = true;
+            this.rbtIcon.UseVisualStyleBackColor = false;
             // 
             // btnPath
             // 
@@ -142,6 +147,7 @@
             this.btnDownLoad.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
             this.btnDownLoad.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnDownLoad.BackgroundImage")));
             this.btnDownLoad.Boarder = true;
+            this.btnDownLoad.DialogResult = System.Windows.Forms.DialogResult.OK;
             this.btnDownLoad.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
             this.btnDownLoad.Location = new System.Drawing.Point(731, 5);
             this.btnDownLoad.MinimumSize = new System.Drawing.Size(10, 10);
@@ -204,6 +210,9 @@
             this.Text = "图标下载";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmIcon_FormClosing);
             this.Load += new System.EventHandler(this.frmIcon_Load);
+            this.Controls.SetChildIndex(this.panel1, 0);
+            this.Controls.SetChildIndex(this.pbValue, 0);
+            this.Controls.SetChildIndex(this.txtShow, 0);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
@@ -221,8 +230,8 @@
         private System.Windows.Forms.TextBox txtFile;
         private All.Control.Metro.Label label2;
         private System.Windows.Forms.FolderBrowserDialog fileSavePath;
-        private System.Windows.Forms.RadioButton rbtPng;
-        private System.Windows.Forms.RadioButton rbtIcon;
+        private All.Control.Metro.RadioButton rbtPng;
+        private All.Control.Metro.RadioButton rbtIcon;
         private All.Control.Metro.ProgressBar pbValue;
         private System.Windows.Forms.TextBox txtShow;
         private System.Windows.Forms.ImageList imageList1;

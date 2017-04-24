@@ -31,16 +31,6 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCom));
             this.metroPanel1 = new All.Control.Metro.Panel(this.components);
-            this.panel12 = new All.Control.Metro.Panel(this.components);
-            this.chkSpaceTime = new All.Control.Metro.CheckBox();
-            this.panel11 = new All.Control.Metro.Panel(this.components);
-            this.lblGetCount = new All.Control.Metro.Label();
-            this.label13 = new All.Control.Metro.Label();
-            this.chkLen = new All.Control.Metro.CheckBox();
-            this.panel10 = new All.Control.Metro.Panel(this.components);
-            this.lblSendCount = new All.Control.Metro.Label();
-            this.label11 = new All.Control.Metro.Label();
-            this.chkGetTime = new All.Control.Metro.CheckBox();
             this.panel9 = new All.Control.Metro.Panel(this.components);
             this.label10 = new All.Control.Metro.Label();
             this.txtTime = new System.Windows.Forms.TextBox();
@@ -53,6 +43,16 @@
             this.label7 = new All.Control.Metro.Label();
             this.chkAscii = new All.Control.Metro.CheckBox();
             this.chkHex = new All.Control.Metro.CheckBox();
+            this.panel12 = new All.Control.Metro.Panel(this.components);
+            this.chkSpaceTime = new All.Control.Metro.CheckBox();
+            this.panel11 = new All.Control.Metro.Panel(this.components);
+            this.lblGetCount = new All.Control.Metro.Label();
+            this.label13 = new All.Control.Metro.Label();
+            this.chkLen = new All.Control.Metro.CheckBox();
+            this.panel10 = new All.Control.Metro.Panel(this.components);
+            this.lblSendCount = new All.Control.Metro.Label();
+            this.label11 = new All.Control.Metro.Label();
+            this.chkGetTime = new All.Control.Metro.CheckBox();
             this.panel6 = new All.Control.Metro.Panel(this.components);
             this.cbbStop = new All.Control.Metro.ComboBox();
             this.label5 = new All.Control.Metro.Label();
@@ -75,12 +75,12 @@
             this.btnOpen = new All.Control.Metro.Button();
             this.ucCommunite1 = new AllTools.FDebug.ucCommunite();
             this.metroPanel1.SuspendLayout();
-            this.panel12.SuspendLayout();
-            this.panel11.SuspendLayout();
-            this.panel10.SuspendLayout();
             this.panel9.SuspendLayout();
             this.panel8.SuspendLayout();
             this.panel7.SuspendLayout();
+            this.panel12.SuspendLayout();
+            this.panel11.SuspendLayout();
+            this.panel10.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -93,12 +93,12 @@
             // 
             this.metroPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
             this.metroPanel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.metroPanel1.Controls.Add(this.panel12);
-            this.metroPanel1.Controls.Add(this.panel11);
-            this.metroPanel1.Controls.Add(this.panel10);
             this.metroPanel1.Controls.Add(this.panel9);
             this.metroPanel1.Controls.Add(this.panel8);
             this.metroPanel1.Controls.Add(this.panel7);
+            this.metroPanel1.Controls.Add(this.panel12);
+            this.metroPanel1.Controls.Add(this.panel11);
+            this.metroPanel1.Controls.Add(this.panel10);
             this.metroPanel1.Controls.Add(this.panel6);
             this.metroPanel1.Controls.Add(this.panel5);
             this.metroPanel1.Controls.Add(this.panel4);
@@ -107,11 +107,158 @@
             this.metroPanel1.Controls.Add(this.panel1);
             this.metroPanel1.Controls.Add(this.btnOpen);
             this.metroPanel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.metroPanel1.Font = new System.Drawing.Font("宋体", 9F);
             this.metroPanel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
             this.metroPanel1.Location = new System.Drawing.Point(2, 29);
             this.metroPanel1.Name = "metroPanel1";
             this.metroPanel1.Size = new System.Drawing.Size(796, 96);
             this.metroPanel1.TabIndex = 0;
+            // 
+            // panel9
+            // 
+            this.panel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.panel9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel9.Controls.Add(this.label10);
+            this.panel9.Controls.Add(this.txtTime);
+            this.panel9.Controls.Add(this.label9);
+            this.panel9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.panel9.Location = new System.Drawing.Point(398, 63);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(185, 28);
+            this.panel9.TabIndex = 40;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.label10.Location = new System.Drawing.Point(147, 7);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(17, 12);
+            this.label10.TabIndex = 18;
+            this.label10.Text = "ms";
+            // 
+            // txtTime
+            // 
+            this.txtTime.Location = new System.Drawing.Point(74, 2);
+            this.txtTime.Name = "txtTime";
+            this.txtTime.Size = new System.Drawing.Size(68, 21);
+            this.txtTime.TabIndex = 17;
+            this.txtTime.Text = "1000";
+            this.txtTime.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.label9.Location = new System.Drawing.Point(3, 7);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(59, 12);
+            this.label9.TabIndex = 16;
+            this.label9.Text = "循环时间:";
+            // 
+            // panel8
+            // 
+            this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.panel8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel8.Controls.Add(this.rbbHex);
+            this.panel8.Controls.Add(this.rbbAscii);
+            this.panel8.Controls.Add(this.label8);
+            this.panel8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.panel8.Location = new System.Drawing.Point(398, 33);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(185, 28);
+            this.panel8.TabIndex = 39;
+            // 
+            // rbbHex
+            // 
+            this.rbbHex.AutoSize = true;
+            this.rbbHex.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.rbbHex.Checked = true;
+            this.rbbHex.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.rbbHex.Location = new System.Drawing.Point(134, 5);
+            this.rbbHex.Name = "rbbHex";
+            this.rbbHex.Size = new System.Drawing.Size(41, 16);
+            this.rbbHex.TabIndex = 18;
+            this.rbbHex.TabStop = true;
+            this.rbbHex.Text = "Hex";
+            this.rbbHex.UseVisualStyleBackColor = false;
+            // 
+            // rbbAscii
+            // 
+            this.rbbAscii.AutoSize = true;
+            this.rbbAscii.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.rbbAscii.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.rbbAscii.Location = new System.Drawing.Point(75, 4);
+            this.rbbAscii.Name = "rbbAscii";
+            this.rbbAscii.Size = new System.Drawing.Size(53, 16);
+            this.rbbAscii.TabIndex = 17;
+            this.rbbAscii.Text = "Ascii";
+            this.rbbAscii.UseVisualStyleBackColor = false;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.label8.Location = new System.Drawing.Point(3, 7);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(59, 12);
+            this.label8.TabIndex = 16;
+            this.label8.Text = "接收方式:";
+            // 
+            // panel7
+            // 
+            this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.panel7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel7.Controls.Add(this.label7);
+            this.panel7.Controls.Add(this.chkAscii);
+            this.panel7.Controls.Add(this.chkHex);
+            this.panel7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.panel7.Location = new System.Drawing.Point(398, 3);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(185, 28);
+            this.panel7.TabIndex = 38;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.label7.Location = new System.Drawing.Point(3, 7);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(59, 12);
+            this.label7.TabIndex = 16;
+            this.label7.Text = "发送方式:";
+            // 
+            // chkAscii
+            // 
+            this.chkAscii.AutoSize = true;
+            this.chkAscii.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.chkAscii.Checked = true;
+            this.chkAscii.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.chkAscii.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.chkAscii.Location = new System.Drawing.Point(73, 6);
+            this.chkAscii.Name = "chkAscii";
+            this.chkAscii.Size = new System.Drawing.Size(54, 16);
+            this.chkAscii.TabIndex = 14;
+            this.chkAscii.Text = "Ascii";
+            this.chkAscii.UseVisualStyleBackColor = false;
+            // 
+            // chkHex
+            // 
+            this.chkHex.AutoSize = true;
+            this.chkHex.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.chkHex.Checked = true;
+            this.chkHex.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.chkHex.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.chkHex.Location = new System.Drawing.Point(133, 6);
+            this.chkHex.Name = "chkHex";
+            this.chkHex.Size = new System.Drawing.Size(42, 16);
+            this.chkHex.TabIndex = 15;
+            this.chkHex.Text = "Hex";
+            this.chkHex.UseVisualStyleBackColor = false;
             // 
             // panel12
             // 
@@ -121,8 +268,8 @@
             this.panel12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
             this.panel12.Location = new System.Drawing.Point(586, 63);
             this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(206, 28);
-            this.panel12.TabIndex = 28;
+            this.panel12.Size = new System.Drawing.Size(205, 28);
+            this.panel12.TabIndex = 37;
             // 
             // chkSpaceTime
             // 
@@ -149,14 +296,14 @@
             this.panel11.Location = new System.Drawing.Point(586, 33);
             this.panel11.Name = "panel11";
             this.panel11.Size = new System.Drawing.Size(205, 28);
-            this.panel11.TabIndex = 27;
+            this.panel11.TabIndex = 36;
             // 
             // lblGetCount
             // 
             this.lblGetCount.AutoSize = true;
             this.lblGetCount.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
             this.lblGetCount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
-            this.lblGetCount.Location = new System.Drawing.Point(148, 7);
+            this.lblGetCount.Location = new System.Drawing.Point(160, 7);
             this.lblGetCount.Name = "lblGetCount";
             this.lblGetCount.Size = new System.Drawing.Size(11, 12);
             this.lblGetCount.TabIndex = 20;
@@ -167,7 +314,7 @@
             this.label13.AutoSize = true;
             this.label13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
             this.label13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
-            this.label13.Location = new System.Drawing.Point(91, 7);
+            this.label13.Location = new System.Drawing.Point(88, 7);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(59, 12);
             this.label13.TabIndex = 19;
@@ -198,14 +345,14 @@
             this.panel10.Location = new System.Drawing.Point(586, 3);
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(205, 28);
-            this.panel10.TabIndex = 26;
+            this.panel10.TabIndex = 35;
             // 
             // lblSendCount
             // 
             this.lblSendCount.AutoSize = true;
             this.lblSendCount.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
             this.lblSendCount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
-            this.lblSendCount.Location = new System.Drawing.Point(148, 7);
+            this.lblSendCount.Location = new System.Drawing.Point(160, 7);
             this.lblSendCount.Name = "lblSendCount";
             this.lblSendCount.Size = new System.Drawing.Size(11, 12);
             this.lblSendCount.TabIndex = 18;
@@ -216,7 +363,7 @@
             this.label11.AutoSize = true;
             this.label11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
             this.label11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
-            this.label11.Location = new System.Drawing.Point(91, 7);
+            this.label11.Location = new System.Drawing.Point(89, 7);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(59, 12);
             this.label11.TabIndex = 17;
@@ -236,152 +383,6 @@
             this.chkGetTime.Text = "接收时间";
             this.chkGetTime.UseVisualStyleBackColor = false;
             // 
-            // panel9
-            // 
-            this.panel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.panel9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel9.Controls.Add(this.label10);
-            this.panel9.Controls.Add(this.txtTime);
-            this.panel9.Controls.Add(this.label9);
-            this.panel9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
-            this.panel9.Location = new System.Drawing.Point(415, 63);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(167, 28);
-            this.panel9.TabIndex = 25;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
-            this.label10.Location = new System.Drawing.Point(140, 7);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(17, 12);
-            this.label10.TabIndex = 18;
-            this.label10.Text = "ms";
-            // 
-            // txtTime
-            // 
-            this.txtTime.Location = new System.Drawing.Point(67, 2);
-            this.txtTime.Name = "txtTime";
-            this.txtTime.Size = new System.Drawing.Size(68, 21);
-            this.txtTime.TabIndex = 17;
-            this.txtTime.Text = "1000";
-            this.txtTime.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
-            this.label9.Location = new System.Drawing.Point(3, 7);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(59, 12);
-            this.label9.TabIndex = 16;
-            this.label9.Text = "循环时间:";
-            // 
-            // panel8
-            // 
-            this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.panel8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel8.Controls.Add(this.rbbHex);
-            this.panel8.Controls.Add(this.rbbAscii);
-            this.panel8.Controls.Add(this.label8);
-            this.panel8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
-            this.panel8.Location = new System.Drawing.Point(415, 33);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(167, 28);
-            this.panel8.TabIndex = 24;
-            // 
-            // rbbHex
-            // 
-            this.rbbHex.AutoSize = true;
-            this.rbbHex.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.rbbHex.Checked = true;
-            this.rbbHex.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
-            this.rbbHex.Location = new System.Drawing.Point(122, 5);
-            this.rbbHex.Name = "rbbHex";
-            this.rbbHex.Size = new System.Drawing.Size(41, 16);
-            this.rbbHex.TabIndex = 18;
-            this.rbbHex.TabStop = true;
-            this.rbbHex.Text = "Hex";
-            this.rbbHex.UseVisualStyleBackColor = false;
-            // 
-            // rbbAscii
-            // 
-            this.rbbAscii.AutoSize = true;
-            this.rbbAscii.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.rbbAscii.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
-            this.rbbAscii.Location = new System.Drawing.Point(67, 5);
-            this.rbbAscii.Name = "rbbAscii";
-            this.rbbAscii.Size = new System.Drawing.Size(53, 16);
-            this.rbbAscii.TabIndex = 17;
-            this.rbbAscii.Text = "Ascii";
-            this.rbbAscii.UseVisualStyleBackColor = false;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
-            this.label8.Location = new System.Drawing.Point(3, 7);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(59, 12);
-            this.label8.TabIndex = 16;
-            this.label8.Text = "接收方式:";
-            // 
-            // panel7
-            // 
-            this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.panel7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel7.Controls.Add(this.label7);
-            this.panel7.Controls.Add(this.chkAscii);
-            this.panel7.Controls.Add(this.chkHex);
-            this.panel7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
-            this.panel7.Location = new System.Drawing.Point(415, 3);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(167, 28);
-            this.panel7.TabIndex = 23;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
-            this.label7.Location = new System.Drawing.Point(3, 7);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(59, 12);
-            this.label7.TabIndex = 16;
-            this.label7.Text = "发送方式:";
-            // 
-            // chkAscii
-            // 
-            this.chkAscii.AutoSize = true;
-            this.chkAscii.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.chkAscii.Checked = true;
-            this.chkAscii.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.chkAscii.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
-            this.chkAscii.Location = new System.Drawing.Point(66, 6);
-            this.chkAscii.Name = "chkAscii";
-            this.chkAscii.Size = new System.Drawing.Size(54, 16);
-            this.chkAscii.TabIndex = 14;
-            this.chkAscii.Text = "Ascii";
-            this.chkAscii.UseVisualStyleBackColor = false;
-            // 
-            // chkHex
-            // 
-            this.chkHex.AutoSize = true;
-            this.chkHex.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.chkHex.Checked = true;
-            this.chkHex.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.chkHex.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
-            this.chkHex.Location = new System.Drawing.Point(122, 6);
-            this.chkHex.Name = "chkHex";
-            this.chkHex.Size = new System.Drawing.Size(42, 16);
-            this.chkHex.TabIndex = 15;
-            this.chkHex.Text = "Hex";
-            this.chkHex.UseVisualStyleBackColor = false;
-            // 
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
@@ -389,7 +390,7 @@
             this.panel6.Controls.Add(this.cbbStop);
             this.panel6.Controls.Add(this.label5);
             this.panel6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
-            this.panel6.Location = new System.Drawing.Point(251, 33);
+            this.panel6.Location = new System.Drawing.Point(237, 33);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(158, 28);
             this.panel6.TabIndex = 22;
@@ -401,9 +402,9 @@
             this.cbbStop.Items.AddRange(new object[] {
             "One",
             "Two"});
-            this.cbbStop.Location = new System.Drawing.Point(53, 2);
+            this.cbbStop.Location = new System.Drawing.Point(59, 2);
             this.cbbStop.Name = "cbbStop";
-            this.cbbStop.Size = new System.Drawing.Size(100, 20);
+            this.cbbStop.Size = new System.Drawing.Size(92, 20);
             this.cbbStop.TabIndex = 13;
             this.cbbStop.SelectedIndexChanged += new System.EventHandler(this.cbbStop_SelectedIndexChanged);
             // 
@@ -425,7 +426,7 @@
             this.panel5.Controls.Add(this.cbbData);
             this.panel5.Controls.Add(this.label4);
             this.panel5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
-            this.panel5.Location = new System.Drawing.Point(251, 3);
+            this.panel5.Location = new System.Drawing.Point(237, 3);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(158, 28);
             this.panel5.TabIndex = 21;
@@ -438,9 +439,9 @@
             "8",
             "7",
             "6"});
-            this.cbbData.Location = new System.Drawing.Point(53, 2);
+            this.cbbData.Location = new System.Drawing.Point(59, 2);
             this.cbbData.Name = "cbbData";
-            this.cbbData.Size = new System.Drawing.Size(100, 20);
+            this.cbbData.Size = new System.Drawing.Size(92, 20);
             this.cbbData.TabIndex = 11;
             this.cbbData.SelectedIndexChanged += new System.EventHandler(this.cbbData_SelectedIndexChanged);
             // 
@@ -464,7 +465,7 @@
             this.panel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
             this.panel4.Location = new System.Drawing.Point(87, 63);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(158, 28);
+            this.panel4.Size = new System.Drawing.Size(147, 28);
             this.panel4.TabIndex = 20;
             // 
             // cbbParity
@@ -475,9 +476,9 @@
             "None",
             "Odd",
             "Even"});
-            this.cbbParity.Location = new System.Drawing.Point(53, 2);
+            this.cbbParity.Location = new System.Drawing.Point(61, 2);
             this.cbbParity.Name = "cbbParity";
-            this.cbbParity.Size = new System.Drawing.Size(100, 20);
+            this.cbbParity.Size = new System.Drawing.Size(80, 20);
             this.cbbParity.TabIndex = 9;
             this.cbbParity.SelectedIndexChanged += new System.EventHandler(this.cbbParity_SelectedIndexChanged);
             // 
@@ -501,7 +502,7 @@
             this.panel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
             this.panel3.Location = new System.Drawing.Point(87, 33);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(158, 28);
+            this.panel3.Size = new System.Drawing.Size(147, 28);
             this.panel3.TabIndex = 19;
             // 
             // cbbBaud
@@ -515,9 +516,9 @@
             "9600",
             "19200",
             "38400"});
-            this.cbbBaud.Location = new System.Drawing.Point(53, 2);
+            this.cbbBaud.Location = new System.Drawing.Point(61, 2);
             this.cbbBaud.Name = "cbbBaud";
-            this.cbbBaud.Size = new System.Drawing.Size(100, 20);
+            this.cbbBaud.Size = new System.Drawing.Size(80, 20);
             this.cbbBaud.TabIndex = 7;
             this.cbbBaud.SelectedIndexChanged += new System.EventHandler(this.cbbBaud_SelectedIndexChanged);
             // 
@@ -541,7 +542,7 @@
             this.panel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
             this.panel2.Location = new System.Drawing.Point(87, 3);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(158, 28);
+            this.panel2.Size = new System.Drawing.Size(147, 28);
             this.panel2.TabIndex = 18;
             // 
             // label1
@@ -561,9 +562,9 @@
             this.cbbCom.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.cbbCom.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbbCom.FormattingEnabled = true;
-            this.cbbCom.Location = new System.Drawing.Point(53, 2);
+            this.cbbCom.Location = new System.Drawing.Point(61, 2);
             this.cbbCom.Name = "cbbCom";
-            this.cbbCom.Size = new System.Drawing.Size(100, 22);
+            this.cbbCom.Size = new System.Drawing.Size(80, 22);
             this.cbbCom.TabIndex = 5;
             // 
             // panel1
@@ -574,7 +575,7 @@
             this.panel1.Controls.Add(this.chkDTR);
             this.panel1.Controls.Add(this.chkRTS);
             this.panel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
-            this.panel1.Location = new System.Drawing.Point(251, 63);
+            this.panel1.Location = new System.Drawing.Point(237, 63);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(158, 28);
             this.panel1.TabIndex = 17;
@@ -595,7 +596,7 @@
             this.chkDTR.AutoSize = true;
             this.chkDTR.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
             this.chkDTR.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
-            this.chkDTR.Location = new System.Drawing.Point(53, 6);
+            this.chkDTR.Location = new System.Drawing.Point(59, 6);
             this.chkDTR.Name = "chkDTR";
             this.chkDTR.Size = new System.Drawing.Size(42, 16);
             this.chkDTR.TabIndex = 14;
@@ -608,7 +609,7 @@
             this.chkRTS.AutoSize = true;
             this.chkRTS.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
             this.chkRTS.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
-            this.chkRTS.Location = new System.Drawing.Point(112, 6);
+            this.chkRTS.Location = new System.Drawing.Point(107, 6);
             this.chkRTS.Name = "chkRTS";
             this.chkRTS.Size = new System.Drawing.Size(42, 16);
             this.chkRTS.TabIndex = 15;
@@ -621,6 +622,7 @@
             this.btnOpen.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
             this.btnOpen.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnOpen.BackgroundImage")));
             this.btnOpen.Boarder = true;
+            this.btnOpen.DialogResult = System.Windows.Forms.DialogResult.OK;
             this.btnOpen.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
             this.btnOpen.Location = new System.Drawing.Point(6, 3);
             this.btnOpen.MinimumSize = new System.Drawing.Size(10, 10);
@@ -654,19 +656,21 @@
             this.Name = "frmCom";
             this.Text = "串口调试工具";
             this.Load += new System.EventHandler(this.frmCom_Load);
+            this.Controls.SetChildIndex(this.metroPanel1, 0);
+            this.Controls.SetChildIndex(this.ucCommunite1, 0);
             this.metroPanel1.ResumeLayout(false);
-            this.panel12.ResumeLayout(false);
-            this.panel12.PerformLayout();
-            this.panel11.ResumeLayout(false);
-            this.panel11.PerformLayout();
-            this.panel10.ResumeLayout(false);
-            this.panel10.PerformLayout();
             this.panel9.ResumeLayout(false);
             this.panel9.PerformLayout();
             this.panel8.ResumeLayout(false);
             this.panel8.PerformLayout();
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
+            this.panel12.ResumeLayout(false);
+            this.panel12.PerformLayout();
+            this.panel11.ResumeLayout(false);
+            this.panel11.PerformLayout();
+            this.panel10.ResumeLayout(false);
+            this.panel10.PerformLayout();
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
             this.panel5.ResumeLayout(false);
@@ -706,28 +710,28 @@
         private All.Control.Metro.Panel panel4;
         private All.Control.Metro.Panel panel3;
         private All.Control.Metro.Panel panel2;
+        private ucCommunite ucCommunite1;
+        private All.Control.Metro.Panel panel12;
+        private All.Control.Metro.CheckBox chkSpaceTime;
+        private All.Control.Metro.Panel panel11;
+        private All.Control.Metro.Label lblGetCount;
+        private All.Control.Metro.Label label13;
+        private All.Control.Metro.CheckBox chkLen;
+        private All.Control.Metro.Panel panel10;
+        private All.Control.Metro.Label lblSendCount;
+        private All.Control.Metro.Label label11;
+        private All.Control.Metro.CheckBox chkGetTime;
+        private All.Control.Metro.Panel panel9;
+        private All.Control.Metro.Label label10;
+        private System.Windows.Forms.TextBox txtTime;
+        private All.Control.Metro.Label label9;
         private All.Control.Metro.Panel panel8;
+        private All.Control.Metro.RadioButton rbbHex;
+        private All.Control.Metro.RadioButton rbbAscii;
         private All.Control.Metro.Label label8;
         private All.Control.Metro.Panel panel7;
         private All.Control.Metro.Label label7;
         private All.Control.Metro.CheckBox chkAscii;
         private All.Control.Metro.CheckBox chkHex;
-        private All.Control.Metro.Panel panel9;
-        private All.Control.Metro.Label label10;
-        private System.Windows.Forms.TextBox txtTime;
-        private All.Control.Metro.Label label9;
-        private ucCommunite ucCommunite1;
-        private All.Control.Metro.RadioButton rbbHex;
-        private All.Control.Metro.RadioButton rbbAscii;
-        private All.Control.Metro.Panel panel12;
-        private All.Control.Metro.CheckBox chkSpaceTime;
-        private All.Control.Metro.Panel panel11;
-        private All.Control.Metro.CheckBox chkLen;
-        private All.Control.Metro.Panel panel10;
-        private All.Control.Metro.CheckBox chkGetTime;
-        private All.Control.Metro.Label lblGetCount;
-        private All.Control.Metro.Label label13;
-        private All.Control.Metro.Label lblSendCount;
-        private All.Control.Metro.Label label11;
     }
 }
